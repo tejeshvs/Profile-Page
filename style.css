@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --peach:rgb(235, 101, 38);
+}
+*::selection{
+    background: var(--peach);
+    color:rgb(65, 4, 21);
+}    
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background:rgb(33, 2, 11);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user img{
+    height: 17;
+    width: 17;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--peach);
+}
+header .user .name{
+    font-size: 3.5rem;
+    color:#fff;
+
+}
+header .navbar{
+    width: 100%;
+}
+header.navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin:1.5rem;
+    background: rgb(65,4,21);
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+header .navbar ul li a:hover{
+    background:var(--peach);
+    color:rgb(33, 2, 11);
+}
+body {
+    background-color:rgb(46, 28, 33);
+    padding-left: 35rem;
+   
+}
+.home {
+    display:flex;
+    justify-content: left;
+    flex-flow: column;
+    padding-left:20rem;
+    padding-top: 35rem;
+    padding-right: 25rem; 
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+  
+    background-size: cover;
+}
+.home h3{
+    font-size: 2.5rem;
+    color:#f5a97d;
+ 
+}
+.home h1{
+    font-size: 5rem;
+    color:#ffff;
+}
+.home p{
+    font-size: 2rem;
+    color:#ffff;
+    padding:1rem 0;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.about .content{
+    color: #fff;
+    padding:20rem; 
+    padding-top:10rem;
+    padding-bottom: 0rem;
+    
+}
+.about .content h3{
+    font-size: 2.5rem;
+}
+.about .content h1{
+    font-size: 4.5rem;
+}
+.about .content p{
+    font-size: 2rem;
+    color:#ffff;
+    padding:1rem 0;
+}
+.about .info{
+    padding-top: 0rem;
+    padding:20rem;
+    padding-bottom: 10rem;
+    color:#fff;
+    font-size: 1.75rem;
+}
+span{
+    color:#f5a97d;
+}
+.about .content .h1 span{
+    color:#f5a97d;
+}
+.about .heading span{
+    color:#f5a97d;
+}
+.about .heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#f5a97d;
+    padding: 0.75%;
+
+}
+.edu .box-container{
+    display: flex;
+    align-items:center;
+    justify-content:space-around; 
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-top: 8rem;
+}
+.edu .box-container .box{
+    width:38rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    padding-top:2rem;
+    border-left: .2rem solid#ffff;
+    position: relative;    
+} 
+.edu .box-container .box span{
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    padding: 5rem 2.5rem;
+}
+.edu .box-container .box h2{
+    font-size: 4rem;
+    color:#fff;
+    padding-top: 2rem;
+}
+.edu .box-container .box p{
+    font-size: 1.3rem;
+    padding-top:1rem;
+    color: #fff;
+    font-size:medium;
+}
